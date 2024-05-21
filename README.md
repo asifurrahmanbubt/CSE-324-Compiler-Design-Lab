@@ -51,6 +51,5 @@ For programs using Flex and Yacc, follow these instructions:
 Replace `file_name` with the name of your Flex or Yacc file, and `executable_name` with the desired name for the compiled program.
 
 This setup should allow you to compile and run Flex and Yacc programs directly from your terminal, provided you have the necessary tools installed.
-```
 
 
