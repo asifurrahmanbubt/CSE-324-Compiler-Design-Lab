@@ -25,3 +25,7 @@ Each C++ program is in a separate file. To compile and run these programs, follo
 3. Compile the program using `g++`:
    ```sh
    g++ -o program_name program_file.cpp
+4. Run the compiled program:
+   ```sh
+./program_name
+
