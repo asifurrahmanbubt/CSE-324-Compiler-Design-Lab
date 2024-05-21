@@ -29,3 +29,28 @@ Each C++ program is in a separate file. To compile and run these programs, follo
    ```sh
    ./program_name
 
+### Running the Flex & Yacc Programs
+
+For programs using Flex and Yacc, follow these instructions:
+
+1. **Flex Program**: To compile and run a Flex program:
+   ```sh
+   flex -o lex.yy.c file_name.l
+   gcc -o executable_name lex.yy.c -lfl
+   ./executable_name
+   ```
+
+2. **Yacc Program**: To compile and run a Yacc program along with Flex:
+   ```sh
+   yacc -d file_name.y
+   flex file_name.l
+   gcc -o executable_name y.tab.c lex.yy.c -ly -lfl
+   ./executable_name
+   ```
+
+Replace `file_name` with the name of your Flex or Yacc file, and `executable_name` with the desired name for the compiled program.
+
+This setup should allow you to compile and run Flex and Yacc programs directly from your terminal, provided you have the necessary tools installed.
+```
+
+
